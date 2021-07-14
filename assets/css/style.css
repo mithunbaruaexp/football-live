@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* --------common styles--------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+.main__section,
+.high__light,
+footer,
+.theater,
+.account__create {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ----------header styles start---------- */
+.header__section {
+  background: rgba(45, 37, 160, 1);
+}
+
+.top__header {
+  height: 80px;
+}
+
+/* ------banner styles -------0 */
+.top__banner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  width: 1160px;
+  margin: 0 auto;
+}
+.banner__img > img {
+  height: 428px;
+  transition: height 2s, 0.9s, transform 1s;
+}
+.banner__img > img:hover {
+  height: 420px;
+  transform: rotate(5deg);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.banner__details h1 {
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 80px;
+  font-weight: 700;
+  font-size: 65px;
+}
+.banner__details a {
+  color: #fff;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.banner__details > span {
+  color: #fff;
+  background: #e02c6d;
+  padding: 10px 24px;
+  transition: 0.3s;
+}
+.banner__details > span:hover {
+  background: #fc005b;
+
+  border-radius: 5px;
+}
+i {
+  transition: 0.3s;
+}
+.banner__details > span:hover i {
+  padding-left: 50px;
+}
+
+/* -------------- main section ------------ */
+
+.main__section {
+  margin-top: 70px;
+}
+.card-details {
+  width: 1050px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  column-gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 474px;
+  box-shadow: 0px 5px 10px #0000001c;
+  width: 330px;
+  transition: 0.3s;
+}
+.player-img img {
+  padding-top: 15px;
+  width: 300px;
+}
+.player-info {
+  width: 300px;
+  margin: 16px 0 30px 0;
+}
+
+.player-info > h1 {
+  color: #000;
+  line-height: 40px;
+  font-size: 28px;
+}
+.card p {
+  line-height: 26px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgba(108, 108, 108, 1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* -------------hight light section-------------- */
+.high__light {
+  margin: 70px 0;
+}
+
+.high__light__details {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.hithlight_img img {
+  height: 427px;
+  width: 567px;
+  transition: 0.3s;
+}
+.hithlight_img img:hover {
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
+.hithlight_text {
+  width: 466px;
+
+  height: 309px;
+}
+
+.hithlight_text h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+.hithlight_text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 8px 0 24px 0;
+  color: rgba(108, 108, 108, 1);
+}
+.hithlight_text span {
+  color: #fff;
+  padding: 10px 24px;
+  transition: 0.3s;
+  background-color: rgba(224, 44, 109, 1);
+}
+.hithlight_text a {
+  color: #fff;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.hithlight_text span:hover {
+  background-color: #fc005b;
+  letter-spacing: 0.3em;
+  border-radius: 5px;
+}
+
+/* ------------footer--------------- */
+
+.footer__details {
+  margin: 158px 0 63px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer__img img {
+  width: 483px;
+}
+.footer__incons {
+  margin: 20px 0;
+}
+.footer__incons i {
+  margin-left: 14px;
+  font-size: 32px;
+  color: rgba(108, 108, 108, 1);
+}
+.footer__details p {
+  line-height: 24px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* <!-- -------- our theater section------- -- */
+.theater {
+  margin-top: 100px;
+}
+.theater__details {
+  margin-top: 50px;
+  display: flex;
+}
+.videos > iframe {
+  border: 10px solid #fff;
+  border-radius: 40px;
+}
+.theater__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
+}
+.theater__text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.theater__text h1 {
+  font-size: 50px;
+}
+.container > h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+/* ---------acount creation____ */
+
+.account__create {
+  height: 600px;
+  margin-top: 100px;
+  background-color: #fc005b;
+}
+.account__create h1 {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 70px;
+}
+
+.account {
+  margin-top: 50px;
+  display: flex;
+}
+.form {
+  justify-content: space-evenly;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #2d25a0;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.form a:hover {
+  background: transparent;
+  border: 2px solid #2d25a0;
+}
+.form a span i {
+  font-size: 20px;
+  padding-right: 5px;
+}
+.account__text {
+  padding-left: 20px;
+  border-left: 5px solid#2D25A0;
+  justify-content: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.account__text h4 {
+  color: #fff;
+  font-size: 35px;
+}
+.account__text p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+/* __________responsive___________ */
+
+/* -------------mobile device---------- */
+@media only screen and (max-width: 600px) {
+  /* bannar section */
+  .top__banner {
+    display: inherit;
+    width: auto;
+    padding: 10px;
+  }
+
+  section.header__section {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .banner__img img {
+    width: 330px;
+    height: auto;
+  }
+
+  .banner__details h1 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .banner__img {
+    margin-top: 45px;
+  }
+  /* ----main section  */
+  section.main__section {
+    display: inherit;
+  }
+
+  .card-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-details {
+    width: auto;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+
+  section.high__light {
+    display: inherit;
+  }
+
+  .high__light__details {
+    display: inherit;
+  }
+
+  .hithlight_text {
+    width: auto;
+    padding: 10px;
+  }
+
+  .hithlight_text h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hithlight_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hithlight_img {
+    margin-top: 44px;
+  }
+  section.theater {
+    display: inherit;
+  }
+
+  .container h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .theater__details {
+    display: inherit;
+  }
+
+  .videos iframe {
+    width: 92%;
+    height: auto;
+  }
+
+  .theater__text h1 {
+    font-size: 16px;
+  }
+
+  .theater__text p {
+    padding: 0;
+  }
+
+  .theater__text {
+    margin: 0;
+    padding: 10px;
+    text-align: justify;
+  }
+  .footer__img img {
+    width: 270px;
+  }
+
+  .footer__incons i {
+    font-size: 21px;
+    margin: 0 10px;
+  }
+
+  .footer__details {
+    text-align: center;
+  }
+  section.account__create {
+    display: inherit;
+  }
+
+  .account {
+    display: inherit;
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+  }
+
+  .form a {
+    margin-bottom: 10px;
+  }
+}
